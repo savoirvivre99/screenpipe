@@ -7,7 +7,11 @@ use tracing::error;
 pub enum KeystrokeCommand {
     DoubleSlash,
     Stop,
-    // Add other commands as needed
+    CopySelection,
+    PasteClipboard,
+    UndoLastAction,
+    SaveFile,
+    FindInPage
 }
 
 pub struct KeystrokeMonitor {
