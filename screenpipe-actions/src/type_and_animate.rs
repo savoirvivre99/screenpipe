@@ -10,9 +10,14 @@ use tokio::time::{sleep, Duration};
 #[derive(Debug)]
 pub enum EnigoCommand {
     TypeCharacter(char),
-    TypeString(String),
+    TypeString(String), 
     DeleteCharacter,
     Shutdown,
+    MouseMove(i32, i32),
+    MouseClick(i32, i32),
+    MouseDrag(i32, i32),
+    MouseDoubleClick(i32, i32),
+    MouseRightClick(i32, i32)
 }
 
 #[derive(Debug, Serialize)]
